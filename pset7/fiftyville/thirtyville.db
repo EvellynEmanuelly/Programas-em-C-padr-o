@@ -1,0 +1,40 @@
+CREATE TABLE crime_scene_reports (
+    report_id INTEGER PRIMARY KEY,
+    date DATE,
+    location TEXT,
+    description TEXT
+);
+
+CREATE TABLE suspects (
+    suspect_id INTEGER PRIMARY KEY,
+    name TEXT,
+    report_id INTEGER,
+    FOREIGN KEY (report_id) REFERENCES crime_scene_reports(report_id)
+    -- Adicione outras colunas conforme necessário
+);
+
+CREATE TABLE alibis (
+    alibi_id INTEGER PRIMARY KEY,
+    suspect_id INTEGER,
+    alibi_date DATE,
+    alibi_details TEXT,
+    FOREIGN KEY (suspect_id) REFERENCES suspects(suspect_id)
+    -- Adicione outras colunas conforme necessário
+);
+
+CREATE TABLE connections (
+    connection_id INTEGER PRIMARY KEY,
+    suspect_id INTEGER,
+    connection_type TEXT,
+    connection_details TEXT,
+    FOREIGN KEY (suspect_id) REFERENCES suspects(suspect_id)
+    -- Adicione outras colunas conforme necessário
+);
+
+CREATE TABLE evidence (
+    evidence_id INTEGER PRIMARY KEY,
+    suspect_id INTEGER,
+    evidence_details TEXT,
+    FOREIGN KEY (suspect_id) REFERENCES suspects(suspect_id)
+    -- Adicione outras colunas conforme necessário
+);

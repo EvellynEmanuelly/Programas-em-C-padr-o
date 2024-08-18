@@ -1,0 +1,26 @@
+selection short -> ordenação por seleção,
+do menor para o maior.
+
+bublle sort -> do maior para o menor, nessa parte,
+ele irá fazer uma seleção de pares, e colocar o menor número
+para a esquerda do maior. Ou seja, ele encontra dois números
+que estão fora de ordem, e os troca.
+
+merge sort -> ele pega uma matriz e dividia pela metade
+esquerda e direita, classificando cada uma dessas metades priemiro,
+e depois, recursivamente classificando cada uma dessas metades,
+nós mesclamos essas metades novamente.
+
+(archives):
+- random: possui numeros em ordem aleatória
+- reversed: possui numeros na ordem inversa, do maior para o menor
+- sorted: possui numeros em ordem do menor para o maior
+- sort1,2,3: possui os algortimos
+
+(codes for test):
+
+descobrir qual o programa e a ordem q ficara:
+./sort1 random5000.txt
+
+tempo de verificação
+time ./sort1 random5000.txt

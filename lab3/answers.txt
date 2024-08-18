@@ -1,0 +1,29 @@
+sort1 uses: Selection Sort
+How do you know?:Durante a execução do programa com
+diferentes arquivos .txt, observei que ele itera sobre
+a lista de números e, a cada iteração, seleciona o menor
+elemento e o move para o início da lista. Este é um
+comportamento característico do Selection Sort,
+que itera sobre a lista, encontrando o menor elemento
+em cada passo e trocando-o com o elemento na posição atual.
+
+
+sort2 uses:Bubble sort
+How do you know?:Ao executar o programa com diferentes
+arquivos .txt, observei que ele compara pares de
+valores adjacentes e os troca se estiverem na ordem
+incorreta. Este é um comportamento característico do
+Bubble Sort, que itera sobre a lista, comparando
+elementos adjacentes e fazendo trocas até que a lista
+esteja ordenada.
+
+
+sort3 uses:Merge sort
+How do you know?:Durante a execução do programa com
+diferentes arquivos .txt, observei que ele divide
+recursivamente a lista em duas partes, ordena cada
+parte separadamente e, em seguida, mescla as partes
+ordenadas para produzir a lista final ordenada.
+Este é um comportamento característico do Merge Sort,
+que divide a lista em partes menores, ordena
+essas partes e as mescla para obter a lista ordenada final.
